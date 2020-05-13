@@ -1,0 +1,23 @@
+﻿<Window x:Class="Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="bntStart" Content="Start reading in weather Data" HorizontalAlignment="Left" Margin="39,28,0,0" VerticalAlignment="Top" Width="272" Height="30" Click="BntStart_Click" FontSize="14"/>
+        <DataGrid x:Name="DataGrid1" HorizontalAlignment="Left" Height="314" Margin="394,28,0,0" VerticalAlignment="Top" Width="367"/>
+        <ProgressBar x:Name="ProgressBar1" HorizontalAlignment="Left" Height="21" Margin="39,321,0,0" VerticalAlignment="Top" Width="325" Minimum="0" Maximum="100"/>
+        <Label x:Name="lblProgress" Content="" HorizontalAlignment="Left" Margin="39,290,0,0" VerticalAlignment="Top" Width="325"/>
+        <Button x:Name="bntStop" Content="STOP" HorizontalAlignment="Left" Margin="39,162,0,0" VerticalAlignment="Top" Width="119" Height="30" FontSize="14" Foreground="#FFF70000" FontWeight="Bold" Click="BntStop_Click"/>
+        <Button x:Name="bntAverageSeasons" Content="Get average temperature of season" HorizontalAlignment="Left" Margin="39,127,0,0" VerticalAlignment="Top" Width="272" Height="30"  FontSize="14" Click="BntAverageSeasons_Click"/>
+        <ComboBox x:Name="ComboSeasons" HorizontalAlignment="Left" Margin="191,100,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="1"/>
+        <Label x:Name="lblSeasons" Content="Select season :" HorizontalAlignment="Left" Margin="39,96,0,0" VerticalAlignment="Top" Width="147" FontSize="14"/>
+        <Label x:Name="lblpercentComplete" Content="Percent complete: " HorizontalAlignment="Left" Margin="164,163,0,0" VerticalAlignment="Top" Width="200" FontSize="14"/>
+        <Label x:Name="lblResult" Content="" HorizontalAlignment="Left" Margin="39,197,0,0" VerticalAlignment="Top" Width="272" FontSize="14"/>
+        <Button x:Name="bntSaveISO" Content="Save to Isolated storage" HorizontalAlignment="Left" Margin="39,242,0,0" VerticalAlignment="Top" Width="272" Height="30" FontSize="14" Foreground="#FF358C40" Click="BntSaveISO_Click"/>
+
+    </Grid>
+</Window>
